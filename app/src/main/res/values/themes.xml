@@ -7,16 +7,16 @@
 
     <style name="Theme.CalculatorApp" parent="Base.Theme.CalculatorApp" />
     
-    <style name="operatorButton" parent="CommonButton">
+    <style name="operatorButton" parent="commonButton">
 
         <item name="android:textColor">#FF9800</item>
     </style>
     
-    <style name="digitButton" parent = "CommonButton">
+    <style name="digitButton" parent = "commonButton">
         <item name="android:textColor">@color/black</item>
 
     </style>
-    <style name="CommonButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+    <style name="commonButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
         <item name="android:layout_width">72dp</item>
         <item name="android:layout_height">72dp</item>
         <item name="cornerRadius">36dp</item>
