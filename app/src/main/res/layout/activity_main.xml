@@ -37,6 +37,18 @@
                 style="@style/digitButton"
                 android:onClick="onDigitClick"
                 android:text="1" />
+            <com.google.android.material.button.MaterialButton
+                style="@style/digitButton"
+                android:onClick="onDigitClick"
+                android:text="1" />
+            <com.google.android.material.button.MaterialButton
+                style="@style/digitButton"
+                android:onClick="onDigitClick"
+                android:text="1" />
+            <com.google.android.material.button.MaterialButton
+                style="@style/digitButton"
+                android:onClick="onDigitClick"
+                android:text="1" />
 
         </LinearLayout>
     </LinearLayout>
