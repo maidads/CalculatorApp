@@ -35,21 +35,22 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
-                style="@style/digitButton"
+                style="@style/operatorButton"
                 android:onClick="onDigitClick"
                 android:text="C" />
             <com.google.android.material.button.MaterialButton
                 style="@style/digitButton"
                 android:onClick="onDigitClick"
-                android:text="1" />
+                app:icon="@drawable/baseline_delete"
+                app:iconTint="#FF9800"/>
 
             <com.google.android.material.button.MaterialButton
-                style="@style/digitButton"
+                style="@style/operatorButton"
                 android:onClick="onDigitClick"
                 android:text="%" />
 
             <com.google.android.material.button.MaterialButton
-                style="@style/digitButton"
+                style="@style/operatorButton"
                 android:onClick="onDigitClick"
                 android:text="/" />
 
@@ -76,7 +77,7 @@
                 android:text="9" />
 
             <com.google.android.material.button.MaterialButton
-                style="@style/digitButton"
+                style="@style/operatorButton"
                 android:onClick="onDigitClick"
                 android:text="*" />
 
@@ -103,7 +104,7 @@
                 android:text="6" />
 
             <com.google.android.material.button.MaterialButton
-                style="@style/digitButton"
+                style="@style/operatorButton"
                 android:onClick="onDigitClick"
                 android:text="+" />
 
@@ -130,7 +131,7 @@
                 android:text="3" />
 
             <com.google.android.material.button.MaterialButton
-                style="@style/digitButton"
+                style="@style/operatorButton"
                 android:onClick="onDigitClick"
                 android:text="-" />
 
@@ -142,7 +143,7 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
-                style="@style/digitButton"
+                style="@style/operatorButton"
                 android:onClick="onDigitClick"
                 android:text="A" />
 
@@ -157,7 +158,7 @@
                 android:text="." />
 
             <com.google.android.material.button.MaterialButton
-                style="@style/digitButton"
+                style="@style/operatorButton"
                 android:onClick="onDigitClick"
                 android:text="=" />
 
