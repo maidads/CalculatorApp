@@ -42,6 +42,8 @@
                 style="@style/digitButton"
                 android:onClick="onDigitClick"
                 app:icon="@drawable/baseline_delete"
+                android:text="1"
+                android:textColor="@color/white"
                 app:iconTint="#FF9800"/>
 
             <com.google.android.material.button.MaterialButton
@@ -145,7 +147,8 @@
             <com.google.android.material.button.MaterialButton
                 style="@style/operatorButton"
                 android:onClick="onDigitClick"
-                android:text="A" />
+                android:textSize="20dp"
+                android:text="AC" />
 
             <com.google.android.material.button.MaterialButton
                 style="@style/digitButton"
