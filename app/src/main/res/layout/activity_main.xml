@@ -40,11 +40,9 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                app:cornerRadius="36dp"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:backgroundTint="@color/white"/>
+                style = "@style/digitButton"
+                android:onClick="onDigitClick"
+                android:text="1"/>
 
         </LinearLayout>
     </LinearLayout>
