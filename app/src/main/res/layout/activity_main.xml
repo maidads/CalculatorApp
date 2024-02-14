@@ -193,6 +193,8 @@
                 android:id="@+id/btn_equal"
                 style="@style/operatorButton"
                 android:onClick="onEqualClick"
+                android:textColor="@color/white"
+                android:backgroundTint="#FF9800"
                 android:text="=" />
 
         </LinearLayout>
