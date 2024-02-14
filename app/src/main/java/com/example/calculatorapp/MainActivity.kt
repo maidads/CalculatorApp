@@ -26,7 +26,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 
-    fun onClearClick(view: View) {}
+    fun onClearClick(view: View) {
+        binding.dataTv.text = ""
+        lastNumeric = false
+    }
     fun onBackClick(view: View) {
         binding.dataTv.text = binding.dataTv.text.toString().dropLast(1)
 
