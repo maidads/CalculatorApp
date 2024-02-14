@@ -187,7 +187,7 @@
                 android:id="@+id/btn_dot"
                 style="@style/digitButton"
                 android:onClick="onDigitClick"
-                android:text="." />
+                android:text="," />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_equal"
