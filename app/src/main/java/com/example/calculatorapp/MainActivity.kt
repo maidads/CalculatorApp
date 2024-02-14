@@ -27,7 +27,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClearClick(view: View) {}
-    fun onBackClick(view: View) {}
+    fun onBackClick(view: View) {
+         binding.dataTv.text = binding.dataTv.text.toString().dropLast(1)
+    }
 
     fun onOperatorClick(view: View) {
         if (!stateError && lastNumeric) {
