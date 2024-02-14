@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.calculatorapp.databinding.ActivityMainBinding
+import net.objecthunter.exp4j.Expression
+import net.objecthunter.exp4j.ExpressionBuilder
 import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     var stateError = false
     var lastDot = false
 
-    private lateinit var exception: Exception
+    private lateinit var expression: Expression
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,5 +30,12 @@ class MainActivity : AppCompatActivity() {
     fun onAllClearClick(view: View) {}
     fun onEqualClick(view: View) {}
 
+    fun onEqual(){
+        if (lastNumeric && !stateError){
+            val txt = binding.dataTv.text.toString()
 
+            expression = ExpressionBuilder(txt).build()
+
+        }
+    }
 }
