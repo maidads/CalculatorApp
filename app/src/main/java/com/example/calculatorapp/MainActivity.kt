@@ -32,7 +32,12 @@ class MainActivity : AppCompatActivity() {
     fun onDigitClick(view: View) {
         if(stateError) {
             binding.dataTv.text = (view as Button).text
+
+        } else {
+             binding.dataTv.append((view as Button).text)
         }
+        lastNumeric = true
+        onEqual()
     }
     fun onAllClearClick(view: View) {}
     fun onEqualClick(view: View) {}
