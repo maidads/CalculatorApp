@@ -35,6 +35,10 @@ class MainActivity : AppCompatActivity() {
             if (lastChar.isDigit()) {
                 onEqual()
             }
+        } catch (e : Exception) {
+            binding.resultTv.text = ""
+            binding.resultTv.visibility = View.GONE
+            Log.e("Last char error", e.toString())
         }
     }
 
