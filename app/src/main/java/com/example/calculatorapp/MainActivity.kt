@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
 
     fun onClearClick(view: View) {}
     fun onBackClick(view: View) {}
+
+    fun onOperatorClick(view: View) {}
     fun onDigitClick(view: View) {
         if(stateError) {
             binding.dataTv.text = (view as Button).text
