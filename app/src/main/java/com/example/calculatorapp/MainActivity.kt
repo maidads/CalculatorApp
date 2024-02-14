@@ -2,10 +2,12 @@ package com.example.calculatorapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import com.example.calculatorapp.databinding.ActivityMainBinding
 import net.objecthunter.exp4j.Expression
 import net.objecthunter.exp4j.ExpressionBuilder
+import java.lang.ArithmeticException
 import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
@@ -36,6 +38,20 @@ class MainActivity : AppCompatActivity() {
 
             expression = ExpressionBuilder(txt).build()
 
+            try{
+
+                val result = expression.evaluate()
+
+                binding.resultTv.visibility = View.VISIBLE
+
+                binding.resultTv.text = "=" + result.toString()
+
+            } catch (ex : ArithmeticException) {
+                Log.e("Evaluate erro", ex.toString())
+                binding.resultTv.text = "Error"
+                stateError = true
+                lastNumeric = false
+            }
         }
     }
 }
