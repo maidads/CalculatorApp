@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
 
     fun onClearClick(view: View) {}
     fun onBackClick(view: View) {}
-    fun onOperatorClick(view: View) {}
     fun onDigitClick(view: View) {
         if(stateError) {
             binding.dataTv.text = (view as Button).text
@@ -47,7 +46,10 @@ class MainActivity : AppCompatActivity() {
         lastNumeric = false
         binding.resultTv.visibility = View.GONE
     }
-    fun onEqualClick(view: View) {}
+    fun onEqualClick(view: View) {
+        onEqual()
+        binding.dataTv.text = binding.resultTv.text.toString().drop(1)
+    }
 
     fun onEqual(){
         if (lastNumeric && !stateError){
