@@ -39,11 +39,8 @@ class MainActivity : AppCompatActivity() {
             expression = ExpressionBuilder(txt).build()
 
             try{
-
                 val result = expression.evaluate()
-
                 binding.resultTv.visibility = View.VISIBLE
-
                 binding.resultTv.text = "=" + result.toString()
 
             } catch (ex : ArithmeticException) {
