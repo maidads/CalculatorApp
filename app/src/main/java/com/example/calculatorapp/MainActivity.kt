@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import com.example.calculatorapp.databinding.ActivityMainBinding
 import net.objecthunter.exp4j.Expression
 import net.objecthunter.exp4j.ExpressionBuilder
@@ -28,7 +29,11 @@ class MainActivity : AppCompatActivity() {
     fun onClearClick(view: View) {}
     fun onBackClick(view: View) {}
     fun onOperatorClick(view: View) {}
-    fun onDigitClick(view: View) {}
+    fun onDigitClick(view: View) {
+        if(stateError) {
+            binding.dataTv.text = (view as Button).text
+        }
+    }
     fun onAllClearClick(view: View) {}
     fun onEqualClick(view: View) {}
 
