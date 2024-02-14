@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
             try{
                 val result = expression.evaluate()
                 binding.resultTv.visibility = View.VISIBLE
-                binding.resultTv.text = "=" + result.toString()
+                binding.resultTv.text = "= " + result.toString()
 
             } catch (ex : ArithmeticException) {
                 Log.e("Evaluate erro", ex.toString())
