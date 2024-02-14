@@ -28,7 +28,14 @@ class MainActivity : AppCompatActivity() {
 
     fun onClearClick(view: View) {}
     fun onBackClick(view: View) {
-         binding.dataTv.text = binding.dataTv.text.toString().dropLast(1)
+        binding.dataTv.text = binding.dataTv.text.toString().dropLast(1)
+
+        try {
+            val lastChar = binding.dataTv.text.toString().last()
+            if (lastChar.isDigit()) {
+                onEqual()
+            }
+        }
     }
 
     fun onOperatorClick(view: View) {
